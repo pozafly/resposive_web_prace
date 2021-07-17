@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/pozafly/2021-vanilla-javascript-bolierplate",
   "scripts": {
-    "dev": "webpack serve",
+    "dev": "webpack serve --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,12 +17,13 @@
     "@babel/preset-env": "^7.14.1",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
+    "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint": "^7.27.0",
     "html-webpack-plugin": "^5.3.1",
     "prettier": "^2.3.0",
+    "style-loader": "^3.1.0",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
