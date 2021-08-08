@@ -33,6 +33,8 @@ module.exports = {
   devServer: {
     port: 8080,
     open: true,
+    // router 같은 것을 쓸 때 새로고침 시 Cannot GET /signup 이런 에러가 뜨는 것을 해결
+    historyApiFallback: true,
     proxy: {
       '/api': {
         target: 'http://localhost:3000',
