@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'none',
@@ -20,6 +21,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+        // use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|mp4|ogv|webm|woff|eot|ico)$/i,
@@ -47,5 +49,8 @@ module.exports = {
       // index.html 템플릿을 기반으로 빌드 결과물을 추가해줌
       template: 'src/index.html',
     }),
+    // new MiniCssExtractPlugin({
+    //   filename: 'style.css',
+    // }),
   ],
 };
