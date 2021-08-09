@@ -104,6 +104,37 @@
   cursor: pointer;
 }
 
+/* 슬라이더 영역 */
+.slider_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 3;
+  width: 100%;
+  height: 300px;
+  height: 18.75rem;
+  background: url(../images/p_images/slider_01.jpg) center center no-repeat;
+}
+
+.slider_section span {
+  width: 34px;
+  width: 2.125rem;
+  height: 39px;
+  height: 2.438rem;
+  text-indent: -9999px;
+  background: url(../images/s_images/slider_arrow.png) no-repeat;
+  cursor: pointer;
+  margin-left: -10px;
+  margin-left: -0.625rem;
+  background-position: 0 0;
+}
+
+span.next_btn {
+  margin-right: -10px;
+  margin-right: -0.625rem;
+  background-position: -34px 0;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width: 768px) {
   /* 기본 CSS */
@@ -176,6 +207,18 @@
     margin-top: -15px;
     margin-top: -0.938rem;
   }
+
+  /* 슬라이더 영역 */
+  .slider_section {
+    width: 59.895833333333333%;
+    /* 슬라이더 영역에 높잇값은 더 이상 필요 없으므로 높잇값을 auto로 설정함. */
+    height: auto;
+  }
+
+  .slider_section span {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 /* PC용 CSS */
@@ -230,5 +273,11 @@
 
   .menu_toggle_btn {
     display: none;
+  }
+
+  /* 슬라이더 영역 */
+  .slider_section {
+    order: 2;
+    width: 50%;
   }
 }
