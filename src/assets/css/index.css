@@ -135,6 +135,81 @@ span.next_btn {
   background-position: -34px 0;
 }
 
+/* 최근 글 영역, 인기 글 영역 */
+.lastest_post_section {
+  order: 4;
+  background: #ffc40f;
+  text-shadow: 0px 1px 1px #b98e0b;
+}
+
+.popular_post_section {
+  order: 5;
+  background: #a660c2;
+  text-shadow: 0px 1px 1px #714185;
+}
+
+.lastest_post_section,
+.popular_post_section {
+  padding: 40px 12.5%;
+  padding: 2.5rem 12.5%;
+}
+
+.title {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  font-size: 1.188em;
+  font-size: 1.188rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lastest_post_list li,
+.popular_post_list li {
+  margin-top: 15px;
+  margin-top: 0.983rem;
+  padding-left: 14px;
+  padding-left: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: url(../images/s_images/post_circle_icon.png) left center no-repeat;
+}
+
+.lastest_post_list li:first-child,
+.popular_post_list li:first-child {
+  margin-top: 0;
+}
+
+.gallery_section {
+  order: 6;
+  padding: 50px 12.5%;
+  padding: 3.125rem 12.5%;
+  text-align: center;
+  background: #e65d5d;
+  text-shadow: 0px 1px 1px #c43434;
+}
+
+.gallery_section img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px #c43434;
+}
+
+.gallery_list li:nth-child(2) {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+.gallery_list li figcaption {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  font-size: 1.188em;
+  font-size: 1.188rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width: 768px) {
   /* 기본 CSS */
@@ -219,6 +294,22 @@ span.next_btn {
     position: relative;
     z-index: 10;
   }
+
+  /* 최근 글 영역, 인기 글 영역 */
+  .lastest_post_section {
+    order: 5;
+  }
+
+  .popular_post_section {
+    order: 6;
+  }
+
+  .lastest_post_section,
+  .popular_post_section {
+    width: 41.6666666666666%;
+    padding-left: 5.208333333333333%;
+    padding-right: 5.208333333333333%;
+  }
 }
 
 /* PC용 CSS */
@@ -279,5 +370,16 @@ span.next_btn {
   .slider_section {
     order: 2;
     width: 50%;
+  }
+
+  /* 최근 글 영역, 인기 글 영역 */
+  .lastest_post_section,
+  .popular_post_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
