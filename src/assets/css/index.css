@@ -273,6 +273,38 @@ span.next_btn {
   padding: 1.875rem 12.5%;
 }
 
+/* 소셜 네트워크 영역 */
+.social_section {
+  order: 9;
+  padding: 24px 12.5%;
+  padding: 1.5rem 12.5%;
+  background: #fff;
+}
+
+.social_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 푸터 영역 */
+.footer {
+  order: 10;
+  width: 100%;
+  background: #474747;
+}
+
+.footer p {
+  padding: 20px;
+  padding: 1.25rem;
+  font-size: 0.813em;
+  font-size: 0.813rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 1px 1px #191919;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width: 768px) {
   /* 기본 CSS */
@@ -418,6 +450,32 @@ span.next_btn {
   .banner_list li:nth-child(2) {
     margin: 0 14px;
     margin: 0 0.875rem;
+  }
+
+  /* 소셜 네트워크 영역 */
+  .social_section {
+    display: flex;
+    order: 7;
+    justify-content: center;
+    align-items: center;
+    width: 16.66666666666%;
+    padding: 0;
+  }
+
+  .social_list {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .social_list li:nth-child(2) {
+    margin: 24px 0;
+    margin: 1.5rem 0;
+  }
+
+  /* 푸터 영역 */
+  .footer p {
+    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 }
 
@@ -580,5 +638,21 @@ span.next_btn {
   .banner_section {
     order: 7;
     width: 22.91666666666%;
+  }
+
+  /* 소셜 네트워크 영역 */
+  .social_section {
+    order: 8;
+    width: 17.0833333333333%;
+  }
+
+  /* 푸터 영역 */
+  .footer {
+    order: 9;
+  }
+
+  .footer p {
+    padding-left: 3.125%;
+    text-align: left;
   }
 }
