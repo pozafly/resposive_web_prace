@@ -3,7 +3,7 @@
 
 // const html = document.querySelector('html');
 
-// import(`./practice/${route}.html`)
+// import(`./${route}.html`)
 //   .then((result) => {
 //     html.innerHTML = result.default;
 //   })
