@@ -14,3 +14,5 @@ template 부분 일일이 바꿔 주어야 함. route.js 적용 시, html만 적
 <br/>
 
 - style.css 파일에서 import css 명 바꿔 주어야 함.
+
+- 여기까지.
